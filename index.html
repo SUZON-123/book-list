@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book List Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        <span class="name">Shujan's</span> Book List
+        <span class="project">Project</span>
+      </h1>
+      <form>
+        <div class="box">
+          <span>Title</span><br />
+          <input type="text" id="title" /><br />
+        </div>
+        <div class="box">
+          <span>Author</span><br />
+          <input type="text" id="author" /><br />
+        </div>
+        <div class="box">
+          <span>year</span><br />
+          <input type="text" id="year" />
+        </div>
+        <div class="box">
+          <input type="submit" id="btn" value="Add Book" />
+        </div>
+      </form>
+      <div class="table">
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+          <tbody id="book_list"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
